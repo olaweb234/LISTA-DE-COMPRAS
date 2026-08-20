@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de Compras</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== TÍTULO ===== -->
+        <h1>Lista de Compras</h1>
+
+        <!-- ===== CADASTRO ===== -->
+        <div class="cadastro-area">
+            <input type="text" id="nomedoproduto" placeholder="Digite o produto" />
+            <input type="number" id="quantidade" placeholder="Quantidade" min="0" />
+            <button id="adicionar">➕ Adicionar</button>
+        </div>
+
+        <!-- ===== BUSCA E ORDENAÇÃO ===== -->
+        <div class="busca-area">
+            <input type="text" id="buscarproduto" placeholder="🔍 Procurar produto" />
+            <button id="buscar">Buscar</button>
+            <button id="ordenar">🔤 Ordenar A–Z</button>
+        </div>
+
+        <!-- ===== LISTA ===== -->
+        <ul id="listahtml"></ul>
+
+        <!-- ===== ESTATÍSTICAS ===== -->
+        <div class="estatisticas">
+            <div class="stat-item">
+                <div class="label">Total de produtos</div>
+                <div class="value" id="totaldeprodutos">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Comprados</div>
+                <div class="value verde" id="quantidadecomprados">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Pendentes</div>
+                <div class="value vermelho" id="quantidadependentes">0</div>
+            </div>
+        </div>
+
+        <!-- ===== ALERTAS ===== -->
+        <p id="alertas">⚠️ Preencha todos os campos.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
